@@ -1,5 +1,5 @@
 class Genre
-  
+
   attr_reader :name
   @@all = []
 
@@ -7,12 +7,12 @@ class Genre
     @name = name
     @@all.push(self)
   end
-  
-  def self.all 
+
+  def self.all
     @@all
   end
 
-  def songs 
+  def songs
     Song.all.select{|song| song.genre == self}
   end
 
