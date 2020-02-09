@@ -13,8 +13,8 @@ class Patient
   end
 
   def new_appointment(doctor)
-    
-  end 
+
+  end
 
   def songs
     Song.all.select{|song| song.genre == self}
